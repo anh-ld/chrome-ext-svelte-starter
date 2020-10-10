@@ -9,16 +9,16 @@ const excludeEntriesToHotReload = []
 
 for (var entryName in common.entry) {
   if (excludeEntriesToHotReload.indexOf(entryName) === -1) {
-    config.entry[entryName] =
+    common.entry[entryName] =
       [
         ("webpack-dev-server/client?http://localhost:" + PORT),
         "webpack/hot/dev-server"
-      ].concat(config.entry[entryName]);
+      ].concat(common.entry[entryName]);
   }
 }
 
 module.exports = merge(common, {
-	mode: 'development',
+  mode: 'development',
   devtool: 'inline-source-map',
   plugins: [new HotModuleReplacementPlugin()],
   devServer: {

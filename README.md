@@ -9,7 +9,7 @@ A boilerplate for Chrome Extensions using [Svelte](https://svelte.technology/) a
 - Run `yarn`.
 - Change the package's name and description on `package.json`.
 - Change the name of your extension on `src/manifest.json`.
-- Run `yarn start`
+- Run `yarn dev`
 - Load your extension on Chrome Development mode.
 
 ## Content Scripts
