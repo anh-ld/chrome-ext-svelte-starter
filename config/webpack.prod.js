@@ -1,5 +1,4 @@
-
-const { merge } = require('webpack-merge')
+const {merge} = require('webpack-merge')
 const common = require('./webpack.common.js')
 const paths = require('./paths')
 const TerserPlugin = require('terser-webpack-plugin')
@@ -9,17 +8,19 @@ module.exports = merge(common, {
 	devtool: false,
 	output: {
 		path: paths.build,
-		filename: '[name].[contenthash:3].js',
+		filename: '[name].[contenthash:5].js'
 	},
 	optimization: {
-		minimizer: [new TerserPlugin({
-			cache: true,
-			parallel: true,
-			terserOptions: {
-				output: {
-					comments: false
+		minimizer: [
+			new TerserPlugin({
+				cache: true,
+				parallel: true,
+				terserOptions: {
+					output: {
+						comments: false
+					}
 				}
-			}}	
-		)],
-	},
+			})
+		]
+	}
 })

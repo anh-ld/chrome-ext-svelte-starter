@@ -32,6 +32,6 @@ yarn build
 ```
 
 ## Secrets
+
 Place all your secrets in `.env`.
 Remember to add `.env` to `.gitignore` on your commit.
-
