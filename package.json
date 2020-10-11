@@ -3,19 +3,19 @@
 	"version": "0.0.2",
 	"description": "Chrome Extension Starter with Svelte",
 	"keywords": [
-    "chrome-extension",
-    "extension",
-    "svelte"
-  ],
-  "author": "Anh Le",
-  "contributors": [
-    "Anh Le <ledzanh@gmail.com> (http://github.com/culee)"
-  ],
-  "license": "MIT",
+		"chrome-extension",
+		"extension",
+		"svelte"
+	],
+	"author": "Anh Le",
+	"contributors": [
+		"Anh Le <ledzanh@gmail.com> (http://github.com/culee)"
+	],
+	"license": "MIT",
 	"scripts": {
 		"dev": "webpack-dev-server --config config/webpack.dev.js",
 		"build": "webpack --config config/webpack.prod.js",
-		"pretty": "prettier --write src/ config/"
+		"pretty": "prettier --write src/ config/ *.json"
 	},
 	"devDependencies": {
 		"clean-webpack-plugin": "^1.0.0",
